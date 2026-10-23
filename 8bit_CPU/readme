@@ -1,1 +1,36 @@
+# 8-bit Accumulator-Based CPU
+
+## Overview
+This project implements an 8-bit accumulator-based CPU using structural VHDL in Xilinx ISE. It supports basic arithmetic and logical operations using a predefined instruction set.
+
+## Features
+- 4-bit Program Counter (PC)
+- Instruction ROM and Decoder
+- Control Unit
+- 8-bit ALU
+- Accumulator Register (ACC)
+- Multiplexer (MUX)
+- Zero Flag detection
+- Simulation using Xilinx ISE (ISim)
+
+## Instruction Set
+
+| Opcode | Instruction | Operation |
+|---|---|---|
+| `0001` | LDI | Load immediate |
+| `0010` | ADD | ACC + Immediate |
+| `0011` | SUB | ACC − Immediate |
+| `0100` | AND | ACC AND Immediate |
+| `0101` | OR | ACC OR Immediate |
+
+## Tools Used
+- VHDL
+- Xilinx ISE
+- ISim Simulator
+
+## Simulation
+The CPU executes a predefined program stored in ROM. The testbench verifies accumulator results and zero flag behavior.
+
+## Author
+Assignment ID: `22201051`
 
